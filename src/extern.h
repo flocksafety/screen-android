@@ -160,7 +160,7 @@ extern void  CloseDevice __P((struct win *));
 extern void  zmodem_abort __P((struct win *, struct display *));
 #endif
 #ifndef HAVE_EXECVPE
-extern void  execvpe __P((char *, char **, char **));
+extern int  execvpe __P((char *, char **, char **));
 #endif
 
 /* utmp.c */
